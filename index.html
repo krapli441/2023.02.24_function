@@ -7,9 +7,24 @@
   <title>Document</title>
 </head>
 <body>
-  <div id="root"></div>
   <script>
-    
+    let rubin = 1;
+    console.log(rubin);
+    rubin = "바보"; //재할당
+    console.log(rubin);
+
+    function valueChange(first, second, third) {
+      if( typeof(first) === "string") {
+        if (typeof(second) === "string") {
+          if (typeof(third) === "string") {
+          return first + second + third;
+          }
+        }
+      }
+    }
+
+    rubin = valueChange(1,4,5);
+    console.log(rubin);
   </script>
 </body>
 </html>
